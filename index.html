@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exemplo de Usos do JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Exemplo: Três Usos de JavaScript</h1>
+
+  <!-- 1. Interatividade com o Usuário -->
+  <section>
+    <h2>1. Validação de Formulário</h2>
+    <form id="formulario">
+      <label>Digite seu e-mail:</label>
+      <input type="email" id="email" placeholder="exemplo@dominio.com" required />
+      <button type="submit">Enviar</button>
+      <div id="erro" class="erro">E-mail inválido!</div>
+    </form>
+  </section>
+
+  <!-- 2. Atualização de Conteúdo com JS -->
+  <section>
+    <h2>2. Atualização sem Recarregar</h2>
+    <p>Clique no botão abaixo para simular uma atualização de conteúdo.</p>
+    <button onclick="atualizarMensagem()">Atualizar Mensagem</button>
+    <p id="message">Mensagem original.</p>
+  </section>
+
+  <!-- 3. Gráfico Animado -->
+  <section>
+    <h2>3. Gráfico Interativo</h2>
+    <p>Progresso de carregamento:</p>
+    <div class="bar-container">
+      <div class="bar" id="progressBar">0%</div>
+    </div>
+    <button onclick="carregar()">Iniciar Carregamento</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
